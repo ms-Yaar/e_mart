@@ -1,0 +1,7 @@
+<h1>Order Details</h1>
+
+<p><strong>Total Price:</strong> <%= @order.total_price %></p>
+<p><strong>User:</strong> <%= @order.user.username %></p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
